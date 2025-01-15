@@ -1,0 +1,38 @@
+@import "./partials/animation";
+@import "./partials/button";
+@import "./partials/color";
+@import "./partials/font";
+@import "./partials/margin";
+@import "./partials/mixin";
+@import "./partials/reset";
+
+@each $button, $color in $btn{
+    .btn-#{$button}{
+        background-color: $color;
+        padding:map-get($sizes , md );
+        @include floating(
+            $radius:10px
+        );
+    }
+} 
+
+.img-hero{
+    @include floating(
+        $border:map-get($sizes, sm) solid $text-color,
+    );
+}
+
+.container{
+    @include grid;
+}
+
+.grid-img{
+    @include image;
+    @include floating(
+        
+        $box-shadow: rgba(233, 10, 10, 0.833) 0px 7px 29px 0px,
+        $border: none,
+    );
+    @include fade-in
+}
+

@@ -1,0 +1,23 @@
+@mixin titleBig{
+    font-size: 50px;
+    color: $text-color;
+}
+
+@mixin floating($radius: map-get($sizes, md), $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px, $border: map-get($sizes, sm) solid $bg-hero){
+    border-radius: $radius;
+    box-shadow: $box-shadow;
+    border:$border;
+}
+
+@mixin image{
+    max-width: 300px;
+    height: auto;
+    margin: map-get($sizes , lg ) map-get($sizes , sm);
+}
+
+@mixin grid{
+     display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    max-width: 100%;
+}
