@@ -10,7 +10,7 @@
 }
 
 @mixin image{
-    max-width: 300px;
+    max-width: 20%;
     height: auto;
     margin: map-get($sizes , lg ) map-get($sizes , sm);
 }
@@ -19,5 +19,4 @@
      display: flex;
     justify-content:space-between;
     flex-direction: row;
-    max-width: 100%;
 }
